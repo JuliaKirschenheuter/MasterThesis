@@ -1,0 +1,55 @@
+Werte;Reihe;Testlaufnummer;Run
+44;Server Push_CSS;1;1
+44;Server Push_CSS;1;2
+49;Server Push_CSS;1;3
+42;Server Push_CSS;1;4
+43;Server Push_CSS;1;5
+42;Server Push_CSS;1;6
+42;Server Push_CSS;1;7
+42;Server Push_CSS;1;8
+42;Server Push_CSS;1;9
+50;Server Push_CSS;2;1
+44;Server Push_CSS;2;2
+41;Server Push_CSS;2;3
+50;Server Push_CSS;2;4
+42;Server Push_CSS;2;5
+42;Server Push_CSS;2;6
+49;Server Push_CSS;2;7
+42;Server Push_CSS;2;8
+42;Server Push_CSS;2;9
+44;Server Push_CSS;3;1
+51;Server Push_CSS;3;2
+44;Server Push_CSS;3;3
+44;Server Push_CSS;3;4
+41;Server Push_CSS;3;5
+42;Server Push_CSS;3;6
+42;Server Push_CSS;3;7
+42;Server Push_CSS;3;8
+42;Server Push_CSS;3;9
+41;OHNE Server Push;1;1
+42;OHNE Server Push;1;2
+41;OHNE Server Push;1;3
+40;OHNE Server Push;1;4
+41;OHNE Server Push;1;5
+41;OHNE Server Push;1;6
+41;OHNE Server Push;1;7
+41;OHNE Server Push;1;8
+48;OHNE Server Push;1;9
+41;OHNE Server Push;2;1
+43;OHNE Server Push;2;2
+40;OHNE Server Push;2;3
+40;OHNE Server Push;2;4
+41;OHNE Server Push;2;5
+42;OHNE Server Push;2;6
+40;OHNE Server Push;2;7
+40;OHNE Server Push;2;8
+40;OHNE Server Push;2;9
+43;OHNE Server Push;3;1
+41;OHNE Server Push;3;2
+47;OHNE Server Push;3;3
+41;OHNE Server Push;3;4
+41;OHNE Server Push;3;5
+41;OHNE Server Push;3;6
+40;OHNE Server Push;3;7
+41;OHNE Server Push;3;8
+40;OHNE Server Push;3;9

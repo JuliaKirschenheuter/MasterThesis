@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "#Daten als .csv importieren\n#Datenformat: Die Messreihen in unterschiedliche Spalten schreiben, pro Messreihe beliebig viele Messwerte, dann aber Farbvariable unten anpassen.\n# Folgende spalten sollten vorhanden sein: \"Messtyp\",\t\"Messwert\",\t\"Group\",\t\"Messtyp2\",\t\"Messwert2\", \"Group2\",\n\ndaten <- read.csv(\"daten.csv\")\n\n#nötige Pakete laden\nlibrary(\"ggplot2\")\n\n#Plot zwei getrennte Linien\n##ggplot-Befehl mit den aessthetics für Linie1 und Farbvariable sowie parameter group\nggplot(daten, aes(y=Group, x=Messwert,colour=Group, group=1)) +\n   #Linie1\n   geom_line(size=1.25) + #Linie\n   geom_point(size=3) + #Punkte\n   geom_text(aes(label=Messtyp), vjust=1.7) + #Labels unterhalb der Linie\n   geom_text(aes(label=Messwert), vjust=-1.2) + #Labels oberhalb\n   \n   #Linie2 aes muss jeweils neu gesetzt werden, da jetzt andere Datengrundlage, ansonsten siehe oben\n   geom_line(aes(x=Messwert2, y=Group2, colour=Group2, group=1),size=1.25) +\n   geom_point(aes(x=Messwert2, y=Group2, colour=Group2),size=3) +\n   geom_text(aes(x=Messwert2, y=Group2, colour=Group2, label=Messtyp), vjust=1.7) +\n   geom_text(aes(x=Messwert2, y=Group2, colour=Group2, label=Messwert2), vjust=-1.2)+\n   \n   #scale_color_manuel um die Einträge der Farbvariable (hier Group) zu definieren\n   scale_color_manual(\n      values = c(\n         \"SP_CSS DATEN\"=\"#b00b1e\",\n         \"SP_CSS + SP_BILDER DATEN\" = \"#040661\"),\n      \n      #Hier Titel für Legende eingeben\n      name=\"Legende\", \n      \n      #hier Namen für Legendenelemente eingeben\n      labels=c(\"SP_CSS DATEN\", \"SP_CSS + SP_BILDER DATEN\") \n      ) +\n   \n   #mit theme die Achsenbeschriftungen entfernen\n   theme(\n      axis.ticks.y = element_blank(),\n      axis.text.y = element_blank(),\n      axis.text.x = element_blank(),\n      axis.ticks.x=element_blank(),\n      axis.title = element_blank()\n   )",
+    "created" : 1467123680673.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1849156112",
+    "id" : "759F6F1C",
+    "lastKnownWriteTime" : 1467132903,
+    "last_content_update" : 1467132903203,
+    "path" : "G:/Seafile/JuDa/Ju/Diagramm_Linien.R",
+    "project_path" : "Diagramm_Linien.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

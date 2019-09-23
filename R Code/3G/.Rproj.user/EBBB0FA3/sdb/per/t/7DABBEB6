@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#Daten importieren\ndaten <- read.csv(\"HTTP2 viele kleine vs. HTTP2 wenige grosse/onLoad/daten_all.csv\", sep=\";\")\n\n#Werte des Boxplots zwischenspeichern\n##Messreihen separieren\nreihe1 <- subset(daten, Reihe==\"HTTP2 viele kleine Dateien\")\nreihe2 <- subset(daten, Reihe==\"HTTP2 wenige große Dateien\")\n##Werte für unterer Whisker, q1\nstats1 <- boxplot.stats(reihe1$Werte)\nstats2 <- boxplot.stats(reihe2$Werte)\nlabels1 <- as.character(reihe1$Reihe[1:5])\nlabels2 <- as.character(reihe2$Reihe[1:5])\nlabels <- data.frame(Werte = c(stats1$stats, stats2$stats), Reihe = c(labels1,labels2))\n\nlibrary(ggplot2)\nggplot(daten, aes(x=Reihe, y=Werte, fill=Reihe)) +\n   geom_boxplot(width=0.36) +\n   scale_fill_manual(\n      values = c(\n         \"HTTP2 viele kleine Dateien\" = \"#ff5733\",\n         \"HTTP2 wenige große Dateien\" = \"#3f85ff\"\n      ),\n      name=NULL,\n      #Reihenfolge und Inhalt der Legendenelemte:\n      limits=c(\"HTTP2 viele kleine Dateien\",\"HTTP2 wenige große Dateien\"),\n      #Text der Legendenelemente (Freitext, wird nicht überprüft!!!)\n      labels= c(\"HTTP2 viele kleine Dateien  \",\"HTTP2 wenige große Dateien\")\n   ) +\n   #Reihenfolge der Boxplots ändern (von links nach rechts)\n   scale_x_discrete(limits=c(\"HTTP2 wenige große Dateien\", \"HTTP2 viele kleine Dateien\"))+\n   \n   geom_text(data = labels, aes(y= labels$Werte, label = labels$Werte), hjust=0, nudge_x = 0.2, size= 9, angle= 45) +\n  \n   theme(\n      axis.title = element_blank(),\n      axis.text.y = element_blank(),\n      #Schriftgröße X-Achse:\n      axis.text.x = element_text(size=24),\n      #Rand um die Das Plotfenster: oben, rechts, unten, links\n      plot.margin = unit(c(0.5,0,0.5,0), \"cm\"),\n      #Schriftformatierung Legendentitel\n      legend.title = element_text(size = 24),\n      #SChriftformatierung Legende\n      legend.text = element_text(size=24, margin = 10),\n      #Position Legende\n      legend.position=\"bottom\"\n      \n   ) +\n   coord_flip()\n   \n\n\n",
+    "created" : 1469986691759.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4240099472",
+    "id" : "7DABBEB6",
+    "lastKnownWriteTime" : 1470665423,
+    "last_content_update" : 1470665423976,
+    "path" : "~/MasterStudium/Masterarbeit/R Code/3G/Boxplot.R",
+    "project_path" : "Boxplot.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

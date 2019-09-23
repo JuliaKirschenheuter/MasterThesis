@@ -1,0 +1,419 @@
+#teamicons {
+    margin-top: 5px;
+    width: 578px;
+    position:relative;
+}
+
+ul#team {
+    margin: 0 0 0 -4px;
+    padding: 0;
+    overflow: hidden;
+
+}
+ul#team li {
+    margin: 0; 
+    padding: 0;
+    position: relative;
+}
+ul#team li {
+    display: inline;
+}
+#team li a:link, #team li a:visited {
+    display: block;
+    float: left;
+    height: 93px;
+    margin-bottom: 4px;
+    overflow: hidden;
+    padding: 0;
+    margin-left: 4px;
+    width: 93px;
+}
+
+#team li a {
+    text-decoration: none;
+    width: 93px;
+    height: 93px;
+}
+
+#team li a.prof:hover {
+    width: 93px;
+    height: 93px;
+    overflow: hidden;
+}
+
+/*Teambilder bei Hover farbig */
+@media (min-width: 675px) {
+    #team li.icon20 a {   
+        background-image: url("../../uploads/professoren/20.jpg");
+    }
+    #team li.icon1 a {
+        background-image: url("../../uploads/professoren/1.jpg");
+    }
+    #team li.icon2 a {  
+        background-image: url("../../uploads/professoren/2.jpg");
+    }
+    #team li.icon3 a {
+        background-image: url("../../uploads/professoren/3.jpg"); 
+    }
+    #team li.icon4 a {
+        background-image: url("../../uploads/professoren/4.jpg");
+    }
+
+    #team li.icon5 a {
+        background-image: url("../../uploads/professoren/5.jpg");
+    }
+    /*2. Reihe*/
+
+    #team li.icon6 a {
+        background-image: url("../../uploads/professoren/6.jpg");
+    }
+
+    #team li.icon7 a {
+        background-image: url("../../uploads/professoren/7.jpg");
+    }
+
+    #team li.icon8 a {
+        background-image: url("../../uploads/professoren/8.jpg");
+    }
+
+    #team li.icon9 a {
+        background-image: url("../../uploads/professoren/9.jpg");
+    }
+
+    #team li.icon10 a {
+        background-image: url("../../uploads/professoren/10.jpg");
+    }
+
+    #team li.icon11 a {
+        background-image: url("../../uploads/professoren/11.jpg");
+    }
+    /*3. Reihe*/
+
+    #team li.icon12 a {
+        background-image: url("../../uploads/professoren/12.jpg");
+    }
+
+    #team li.icon13 a {
+        background-image: url("../../uploads/professoren/13.jpg");
+    }
+
+    #team li.icon14 a {
+        background-image: url("../../uploads/professoren/14.jpg");
+    }
+
+    #team li.icon15 a {
+        background-image: url("../../uploads/professoren/15.jpg");
+    }
+
+    #team li.icon16 a {
+        background-image: url("../../uploads/professoren/16.jpg");
+    }
+
+    #team li.icon17 a {
+        background-image: url("../../uploads/professoren/17.jpg");
+    }
+    /*4. Reihe*/
+
+    #team li.icon18 a {
+        background-image: url("../../uploads/professoren/18.jpg");
+    }
+
+    #team li.icon19 a {
+        background-image: url("../../uploads/professoren/19.jpg");
+    }
+
+    #team li.icon20 a {
+        background-image: url("../../uploads/professoren/20.jpg");
+    }
+
+    #team li.icon21 a {
+        background-image: url("../../uploads/professoren/21.jpg");
+    }
+
+    #team li.icon22 a {
+        background-image: url("../../uploads/professoren/22.jpg");
+    }
+
+    #team li.icon23 a {
+        background-image: url("../../uploads/professoren/23.jpg");
+    }
+
+    #team li.icon24 a {
+        background-image: url("../../uploads/professoren/24.jpg");
+    }
+    /*5. Reihe*/
+
+    #team li.icon25 a {
+        background-image: url("../../uploads/professoren/25.jpg");
+    }
+
+    #team li.icon26 a {
+        background-image: url("../../uploads/professoren/26.jpg");
+    }
+
+    #team li.icon27 a {
+        background-image: url("../../uploads/professoren/27.jpg");
+    }
+
+    #team li.icon28 a {
+        background-image: url("../../uploads/professoren/28.jpg");
+    }
+
+    #team li.icon29 a {
+        background-image: url("../../uploads/professoren/29.jpg");
+    }
+
+    #team li.icon30 a {
+        background-image: url("../../uploads/professoren/30.jpg");
+    }
+    /*6. Reihe*/
+
+    #team li.icon31 a {
+        background-image: url("../../uploads/professoren/31.jpg");
+    }
+
+    #team li.icon32 a {
+        background-image: url("../../uploads/professoren/32.jpg");
+    }
+
+    #team li.icon33 a {
+        background-image: url("../../uploads/professoren/33.jpg");
+    }
+
+    #team li.icon34 a {
+        background-image: url("../../uploads/professoren/34.jpg");
+    }
+
+    #team li.icon35 a {
+        background-image: url("../../uploads/professoren/35.jpg");
+    }
+
+    #team li.icon36 a {
+        background-image: url("../../uploads/professoren/36.jpg");
+    }
+    /*7. Reihe*/
+
+    #team li.icon37 a {
+        background-image: url("../../uploads/professoren/37.jpg");
+    }
+
+    #team li.icon38 a {
+        background-image: url("../../uploads/professoren/38.jpg");
+    }
+
+    #team li.icon39 a {
+        background-image: url("../../uploads/professoren/39.jpg");
+    }
+
+    #team li.icon40 a {
+        background-image: url("../../uploads/professoren/40.jpg");
+    }
+
+    #team li.icon41 a {
+        background-image: url("../../uploads/professoren/41.jpg");
+    }
+
+    #team li.icon42 a {
+        background-image: url("../../uploads/professoren/42.jpg");
+    }
+    /*8. Reihe*/
+    #team li.icon43 a {
+        background-image: url("../../uploads/professoren/43.jpg");
+    }
+
+}
+
+
+/* hoverdings*/
+#team li a.prof em, #team li  span { display: none;}
+#team li {
+    position: relative; 
+}
+@media (min-width: 675px) {
+
+    #team li:hover div.box p.box-readmore { display: none;}
+    #team li a.prof:hover span {
+        display: block; 
+        position: absolute;
+        width: 270px;
+        height: 182px;
+        background: transparent url("../../uploads/professoren/bg-team-li.png") no-repeat;
+        z-index: 20;
+        padding: 10px 10px 5px 10px;
+    }
+    #team li a.prof:hover em {
+        background: transparent url("../../uploads/professoren/bg-team-arrow.png") no-repeat;
+        display: block;
+        position: absolute;
+        z-index: 30;
+        width: 93px;
+    }
+    
+    #team li.row4 a:hover em,
+    #team li.row5 a:hover em,
+    #team li.row6 a:hover em,
+    #team li.row7 a:hover em,
+    #team li.row8 a:hover em{
+        background: transparent url("../../uploads/professoren/bg-team-arrow-top.png") no-repeat;
+    
+    }
+
+}
+
+#team li h3 {
+    color: #018ebc;
+    font-size: 13px;
+    margin: 0px 0 10px 0;
+}
+
+#team li p {
+    font-size: 12px;
+    color: #474747;
+    margin: 6px 0;
+    line-height: 115%;
+}
+
+#team li ul i {
+    text-decoration: underline;
+    font-style: normal;
+    color: #000;
+}
+
+#team li a ul.details {
+    margin: 0;
+    padding: 0;
+}
+
+#team li a ul.details li {
+    list-style-type: none;
+    color: #474747;
+    font-size: 12px;
+    margin: 0 0 5px 0 !important;
+    display: block;
+    line-height: 100%;
+    text-align: left;
+}
+
+#team li pre {
+    color: #ECECEC;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background: #319EC7;
+    padding: 3px;
+    font-family: Arial,"Helvetica Neue",Helvetica,Geneva,sans-serif;
+    -moz-border-radius:3px;
+-khtml-border-radius:3px;
+    line-height: 105%;
+}
+
+/* Row 1 */
+#team li.row1:hover a span {
+    top: 97px;  
+}
+#team li.row1:hover a em {
+    top: 88px;  
+}
+
+#team li.row2:hover a span {
+    top: 194px; 
+}
+#team li.row2:hover a em {
+    top: 185px; 
+}
+
+#team li.row3:hover a span {
+    top: 291px; 
+}
+#team li.row3:hover a em {
+    top: 282px; 
+}
+
+
+#team li.row4:hover a span {
+    top: 97px;  
+}
+#team li.row4:hover a em {
+    top: 286px; 
+}
+
+#team li.row5:hover a span {
+    top: 194px;
+}
+#team li.row5:hover a em {
+    top: 383px; 
+}
+
+#team li.row6:hover a span {
+    top: 291px;
+}
+#team li.row6:hover a em {
+    top: 480px; 
+}
+
+#team li.row7:hover a span {
+    top: 388px;
+}
+#team li.row7:hover a em {
+    top: 577px; 
+}
+#team li.row8:hover a span {
+    top: 485px;
+}
+#team li.row8:hover a em {
+    top: 674px; 
+}
+
+
+
+
+
+
+#team li a.col4:hover span {
+    right: 191px;
+}
+
+#team li a.col5:hover span {
+    right: 94px;
+}
+#team li a.col6:hover span {
+    right: -3px;
+}
+#team li a.col7:hover span {
+    right: -100px;
+}
+#team li a.col8:hover span {
+    right: -197px;
+}
+
+
+/*Für Safari and Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+#team li a.col4:hover span {
+    left: 101px;
+}
+#team li a.col5:hover span {
+    left: 198px;
+}
+#team li a.col6:hover span {
+    left: 295px;
+}
+#team li a.col7:hover span {
+    left: 392px;
+}
+#team li a.col8:hover span {
+    left: 489px;
+}
+}
+
+
+
+.tablelistkontakt td .profs{color: #474747;}
+.tablelistkontakt td{height: 25px; padding-left: 5px;}
+.tablelistkontakt{max-width:300px; margin-top:30px;}
+
+
+#teamicons #team{text-align:left;}

@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1467137999625.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "BCA01C60",
+    "lastKnownWriteTime" : 7308604914264011873,
+    "last_content_update" : 1467137999625,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "vk738elhlb",
+        "caption" : "daten",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=daten&cache_key=vk738elhlb",
+        "displayedObservations" : "18",
+        "environment" : "",
+        "object" : "daten",
+        "totalObservations" : "18",
+        "variables" : "2"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

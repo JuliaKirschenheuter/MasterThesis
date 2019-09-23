@@ -1,0 +1,359 @@
+/*
+ * Theme Name: BIC Bootstrap WP Theme
+ * Theme URI: http://www.besserdich.com
+ * Theme Description: Blank Bootstrap Wordpress Theme by Besserdich IT Consulting
+ * Author: Nina Taberski-Besserdich (Besserdich IT Consulting)
+ * Author URI: http://www.besserdich.com/
+ * Version: 0.3
+ * Tags: twitter bootstrap, white, blank
+ * License: license.txt
+ * License URI:
+*/
+
+
+
+/* styles for shortcodes  */
+
+.divider {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    clear: both;
+    display: block;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+
+/* Styling of standard gallery shortcode */
+
+.gallery {
+    margin: auto;
+}
+
+.gallery-item {
+    float: left;
+    margin-top: 10px;
+    text-align: center;
+    width: 33%;
+}
+
+.gallery img {
+    border: 2px solid #cfcfcf;
+}
+
+.gallery-caption {
+    margin-left: 0;
+}
+
+/*Menu*/
+.navbar-default {
+    background-color:null!important;
+    border-color:null!important;
+}
+
+
+
+
+/*Styles for Plugins*/
+
+/* Pagenavi */
+
+.wp-pagenavi{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+
+
+
+
+
+/* very basic styles for layout */
+
+
+/*Body*/ 
+
+html, body {
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+
+/* Top Header */ 
+
+ #top-header{
+        display: none;
+    }
+
+    
+#top-header{
+    background-color: #F8F8F8;
+    color: #333;
+    font-size: 0.8rem;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    padding: 0 15px;
+}
+
+#top-header ul,ol{
+    margin-bottom: 3px;
+    margin-left: 0px; 
+    padding-left: 0px;
+}
+
+#top-header  a{
+    color: #333;
+}
+
+
+/* Brand */
+
+.brand{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+#site-title{
+    font-size: 2rem;
+}
+
+
+
+/*Breadcrumbs*/
+
+.breadcrumb{
+    background-color: transparent;
+    border-radius: 0;
+    padding-left: 10px;
+}
+
+
+/* post image */
+
+.wp-post-image{
+    float: left;
+    margin-right: 15px;  
+}
+
+
+
+/*Read More Links*/
+
+.read-more{
+    background-color: #428BCA;
+    border-color: #428BCA;
+    color: #FFFFFF;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 6px 12px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.read-more:hover {
+    background-color: #3276B1;
+    border-color: #3276B1;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/* meta data */ 
+
+.meta{	
+    font-size: 0.9rem;
+}
+
+.cats{
+    margin-left: 5px;
+    margin-right: 10px;	
+}
+
+.tags{
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+
+
+/* Sidebar */
+
+.sidebar-wrapper{
+    padding-top: 0px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-left: 1px solid transparent;
+    border-color: #dcdcdc;
+}
+
+.sidebar-wrapper ul {
+    padding-left: 25px;
+}
+
+.sidebar-wrapper p {
+    padding-left: 10px;
+}
+
+.sidebar-posts .textwidget, .sidebar-page .textwidget{
+    padding-left: 15px;
+
+}
+
+
+/* Widgets */
+
+.widget{
+    margin-bottom: 40px;
+}
+
+.header-widget{
+    display: none;
+}
+
+
+/* code in comments*/
+
+code {
+    white-space: normal; 
+}
+
+
+/* Footer */
+
+.footer-wrapper{
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    padding: 0 15px;
+    background-color: #F8F8F8;
+}
+
+.footer{
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.footer h3, .footer h4, .footer h5, .footer h6 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-transform: none;
+    font-weight: bold;
+}
+
+.footer-menu {
+    list-style: none outside none;
+    display: inline-block;
+
+}
+
+.footer-menu-wrapper ul, ol{
+    margin-left: 0px;
+    padding-left: 0px; 
+}
+
+.footer-menu  li {
+    display: inline;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+
+
+/* Copyright*/
+
+.copyright-wrapper{
+    background-color: #F8F8F8;
+    min-height: 100%;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0;
+    padding: 0 15px;
+    font-size: 0.8rem;
+}
+
+.credit{
+    font-size: 0.8rem;
+    text-transform: none;
+    list-style: none outside none;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.credit li{
+    display: inline;
+}
+
+.copyright-text {
+    margin-right: 40px
+}
+
+.copyright{
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+
+ #top-header{
+        display: block;
+    }
+    
+    .header-widget{
+        display: block;
+    }
+
+    .header-menu-wrapper{
+        float: right;
+    }
+
+    .footer-menu-wrapper{
+        float: right;
+    }
+
+    .footer-menu-wrapper ul, ol{
+        margin-left: 10px;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+    #top-header ul,ol{
+        margin-left: 10px;
+    }
+
+    .header-menu li:first-child {
+        padding-left: 20px;
+    }
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }

@@ -1,0 +1,55 @@
+Werte;Reihe;Testlaufnummer;Run
+52;Server Push_CSS und _Bilder;1;1
+51;Server Push_CSS und _Bilder;1;2
+51;Server Push_CSS und _Bilder;1;3
+59;Server Push_CSS und _Bilder;1;4
+60;Server Push_CSS und _Bilder;1;5
+52;Server Push_CSS und _Bilder;1;6
+50;Server Push_CSS und _Bilder;1;7
+49;Server Push_CSS und _Bilder;1;8
+48;Server Push_CSS und _Bilder;1;9
+50;Server Push_CSS und _Bilder;2;1
+50;Server Push_CSS und _Bilder;2;2
+50;Server Push_CSS und _Bilder;2;3
+49;Server Push_CSS und _Bilder;2;4
+55;Server Push_CSS und _Bilder;2;5
+49;Server Push_CSS und _Bilder;2;6
+50;Server Push_CSS und _Bilder;2;7
+56;Server Push_CSS und _Bilder;2;8
+50;Server Push_CSS und _Bilder;2;9
+53;Server Push_CSS und _Bilder;3;1
+52;Server Push_CSS und _Bilder;3;2
+50;Server Push_CSS und _Bilder;3;3
+60;Server Push_CSS und _Bilder;3;4
+49;Server Push_CSS und _Bilder;3;5
+48;Server Push_CSS und _Bilder;3;6
+54;Server Push_CSS und _Bilder;3;7
+50;Server Push_CSS und _Bilder;3;8
+50;Server Push_CSS und _Bilder;3;9
+46;Server Push_CSS;1;1
+44;Server Push_CSS;1;2
+44;Server Push_CSS;1;3
+48;Server Push_CSS;1;4
+44;Server Push_CSS;1;5
+44;Server Push_CSS;1;6
+44;Server Push_CSS;1;7
+44;Server Push_CSS;1;8
+45;Server Push_CSS;1;9
+44;Server Push_CSS;2;1
+53;Server Push_CSS;2;2
+43;Server Push_CSS;2;3
+43;Server Push_CSS;2;4
+49;Server Push_CSS;2;5
+43;Server Push_CSS;2;6
+50;Server Push_CSS;2;7
+44;Server Push_CSS;2;8
+50;Server Push_CSS;2;9
+44;Server Push_CSS;3;1
+48;Server Push_CSS;3;2
+44;Server Push_CSS;3;3
+44;Server Push_CSS;3;4
+50;Server Push_CSS;3;5
+47;Server Push_CSS;3;6
+48;Server Push_CSS;3;7
+50;Server Push_CSS;3;8
+44;Server Push_CSS;3;9

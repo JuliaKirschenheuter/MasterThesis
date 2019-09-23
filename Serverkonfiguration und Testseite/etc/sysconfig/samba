@@ -1,0 +1,16 @@
+## Path:           Network/Samba
+## Description:    Samba process options
+## Type:           string
+## Default:        "-D"
+## ServiceRestart:·winbind
+WINBINDOPTIONS="-D"
+## Path:           Network/Samba
+## Description:    Samba process options
+## Type:           string
+## Default:        "-D"
+## ServiceRestart:·nmb
+NMBDOPTIONS="-D"
+## Type:           string
+## Default:        "-D"
+## ServiceRestart:·smb
+SMBDOPTIONS="-D"

@@ -1,0 +1,88 @@
+
+/*footer*/
+
+.sponsoren-container .col-md-2 {
+	height: 110px;
+}
+
+.sponsoren-wrapper img {
+	max-width: 100%;
+}
+
+#execphp-5 {
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.sponsoren-wrapper {
+	background-color: #EAEAEA;
+}
+
+.footer-wrapper {
+	background-color: #0080AD
+}
+
+.copyright-wrapper {
+	background-color: #326a9a;
+}
+
+.footer .menu,
+.footer .sub-menu {
+	list-style: none;
+}
+
+.footer .menu li a {
+	font-size: 14px;
+}
+
+.footer .sub-menu li a {
+	font-size: 12px;
+}
+
+.footer .sub-menu {
+	padding-left: 0px;
+	padding-top: 5px;
+}
+
+.sponsor-burda {
+	height: auto;
+	width: 100px;
+	padding: 0px;
+}
+
+.sponsor-vitra {
+	padding-top: 30px;
+}
+
+.sponsor-kresse-discher,
+.sponsor-dmc {
+	padding-top: 40px;
+}
+
+.sponsor-united-internet {
+	padding-top: 20px;
+}
+
+#menu-footer-left {
+	padding-left: 0px;
+}
+
+@media (max-width:500px) {
+	.footer-wrapper .navi-footer-cont {
+		width: 100%;
+	}
+}
+.greyscale {
+	-moz-filter:blur(2px);
+	-webkit-filter:blur(2px);
+	-o-filter:blur(2px);
+	-ms-filter:blur(2px);
+	filter:blur(2px); 
+	margin: auto;
+}
+
+.greyscale:hover {
+	filter: none;
+	-webkit-filter: none;
+	opacity: 1;
+}

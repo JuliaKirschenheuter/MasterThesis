@@ -1,0 +1,52 @@
+#Daten importieren
+daten <- read.csv("HTTP2 viele kleine vs. HTTP2 wenige grosse/onLoad/daten_all.csv", sep=";")
+
+#Werte des Boxplots zwischenspeichern
+##Messreihen separieren
+reihe1 <- subset(daten, Reihe=="HTTP2 viele kleine Dateien")
+reihe2 <- subset(daten, Reihe=="HTTP2 wenige große Dateien")
+##Werte für unterer Whisker, q1
+stats1 <- boxplot.stats(reihe1$Werte)
+stats2 <- boxplot.stats(reihe2$Werte)
+labels1 <- as.character(reihe1$Reihe[1:5])
+labels2 <- as.character(reihe2$Reihe[1:5])
+labels <- data.frame(Werte = c(stats1$stats, stats2$stats), Reihe = c(labels1,labels2))
+
+library(ggplot2)
+ggplot(daten, aes(x=Reihe, y=Werte, fill=Reihe)) +
+   geom_boxplot(width=0.36) +
+   scale_fill_manual(
+      values = c(
+         "HTTP2 viele kleine Dateien" = "#ff5733",
+         "HTTP2 wenige große Dateien" = "#3f85ff"
+      ),
+      name=NULL,
+      #Reihenfolge und Inhalt der Legendenelemte:
+      limits=c("HTTP2 viele kleine Dateien","HTTP2 wenige große Dateien"),
+      #Text der Legendenelemente (Freitext, wird nicht überprüft!!!)
+      labels= c("HTTP2 viele kleine Dateien  ","HTTP2 wenige große Dateien")
+   ) +
+   #Reihenfolge der Boxplots ändern (von links nach rechts)
+   scale_x_discrete(limits=c("HTTP2 wenige große Dateien", "HTTP2 viele kleine Dateien"))+
+   
+   geom_text(data = labels, aes(y= labels$Werte, label = labels$Werte), hjust=0, nudge_x = 0.2, size= 9, angle= 45) +
+  
+   theme(
+      axis.title = element_blank(),
+      axis.text.y = element_blank(),
+      #Schriftgröße X-Achse:
+      axis.text.x = element_text(size=24),
+      #Rand um die Das Plotfenster: oben, rechts, unten, links
+      plot.margin = unit(c(0.5,0,0.5,0), "cm"),
+      #Schriftformatierung Legendentitel
+      legend.title = element_text(size = 24),
+      #SChriftformatierung Legende
+      legend.text = element_text(size=24, margin = 10),
+      #Position Legende
+      legend.position="bottom"
+      
+   ) +
+   coord_flip()
+   
+
+

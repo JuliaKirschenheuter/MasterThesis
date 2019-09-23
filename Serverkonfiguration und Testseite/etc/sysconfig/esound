@@ -1,0 +1,81 @@
+## Path:        Network/Sound/Esound
+## Description: Esound daemon options\n\
+## Warning: To use global esound daemon, you must also set spawn_options\
+## in /etc/esd.conf to the same protocol (i. e. add '-tcp'), remove -terminate\
+## from default_options (if any), unset 'Enable sound server startup' in\
+## gnome-sound-properties for all users and optionally set ESPEAKER environment\
+## variable and handle authentization.\n\
+## You are also encouraged to start gnome-session (in /usr/X11R6/bin/gnome) via\
+## esddsp.
+## Type:        yesno
+## Default:     no
+## ServiceRestart: esound
+#
+# Beeps on daemon start?
+#
+ESD_BEEPS="no"
+
+## Type:        yesno
+## Default:     yes
+#
+# Open TCP socket?
+#
+ESD_TCP="yes"
+
+## Type:        yesno
+## Default:     yes
+#
+# Public access to server (from other host than localhost)?
+# Note that you must either enable public access or set bind address
+# to be able to access esound remotelly.
+#
+ESD_PUBLIC="yes"
+
+## Type:        string
+## Default:     ""
+#
+# TCP/IP bind address.
+# You can also specify "$HOSTNAME", this will be replaced by your
+# canonical host name.
+# Note that you must either enable public access or set bind address
+# to be able to access esound remotelly.
+#
+ESD_BIND=""
+
+## Type:        yesno
+## Default:     no
+#
+# Open UNIX socket?
+#
+ESD_UNIX="no"
+
+## Type:        integer
+## Default:     2
+#
+# Timeout to release sound device if daemon is not active (auto-spawn)
+# Set to -1 for no timeout.
+#
+ESD_AS=2
+
+## Type:        string
+## Default:     ""
+#
+# Other esound options:
+#  -d DEVICE
+#        force esd to use sound device DEVICE
+#  -b
+#        run server in 8 bit sound mode
+#  -r RATE
+#        run server at sample rate of RATE
+#  -port PORT
+#        listen for connections at PORT (only for tcp/ip)
+#  -promiscuous
+#        start unlocked and owned (disable authenticaton)
+#        NOT RECOMMENDED
+#  -trust
+#        start esd even if use of /tmp/.esd can be insecure
+#        NOT RECOMMENDED
+#  -terminate
+#        DO NOT USE
+#
+ESD_OPTIONS=""

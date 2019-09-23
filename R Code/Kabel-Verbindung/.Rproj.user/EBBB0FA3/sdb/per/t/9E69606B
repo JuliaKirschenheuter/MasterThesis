@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#Daten importieren\ndaten <- read.csv(\"HTTP2 vs. HTTP2 Server Push/SP_CSS, SP_Bilder vs. SP_CSS/TTFB/daten_all.csv\", sep=\";\")\n\n#Werte des Boxplots zwischenspeichern\n##Messreihen separieren\nreihe1 <- subset(daten, Reihe==\"Server Push_CSS und _Bilder\")\nreihe2 <- subset(daten, Reihe==\"Server Push_CSS\")\n##Werte für unterer Whisker, q1\nstats1 <- boxplot.stats(reihe1$Werte)\nstats2 <- boxplot.stats(reihe2$Werte)\nlabels1 <- as.character(reihe1$Reihe[1:5])\nlabels2 <- as.character(reihe2$Reihe[1:5])\nlabels <- data.frame(Werte = c(stats1$stats, stats2$stats), Reihe = c(labels1,labels2))\n\nlibrary(ggplot2)\nggplot(daten, aes(x=Reihe, y=Werte, fill=Reihe)) +\n   geom_boxplot(width=0.36) +\n   scale_fill_manual(\n      values = c(\n         \"Server Push_CSS und _Bilder\" = \"#c90b0b\",\n         \"Server Push_CSS\" = \"#3e4fc8\"\n      ),\n      name=NULL,\n      #Reihenfolge und Inhalt der Legendenelemte:\n      limits=c(\"Server Push_CSS und _Bilder\",\"Server Push_CSS\"),\n      #Text der Legendenelemente (Freitext, wird nicht überprüft!!!)\n      labels= c(\"Server Push_CSS und _Bilder  \",\"Server Push_CSS\")\n   ) +\n   #Reihenfolge der Boxplots ändern (von links nach rechts)\n   scale_x_discrete(limits=c(\"Server Push_CSS\", \"Server Push_CSS und _Bilder\"))+\n   \n   geom_text(data = labels, aes(y= labels$Werte, label = labels$Werte), hjust=0, nudge_x = 0.2, size= 9, angle= 45) +\n  \n   theme(\n      axis.title = element_blank(),\n      axis.text.y = element_blank(),\n      #Schriftgröße X-Achse:\n      axis.text.x = element_text(size=24),\n      #Rand um die Das Plotfenster: oben, rechts, unten, links\n      plot.margin = unit(c(0.5,0,0.5,0), \"cm\"),\n      #Schriftformatierung Legendentitel\n      legend.title = element_text(size = 24),\n      #SChriftformatierung Legende\n      legend.text = element_text(size=24, margin = 10),\n      #Position Legende\n      legend.position=\"bottom\"\n      \n   ) +\n   coord_flip()\n   \n\n\n",
+    "created" : 1470072936198.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "900420420",
+    "id" : "9E69606B",
+    "lastKnownWriteTime" : 1470122518,
+    "last_content_update" : 1470122518217,
+    "path" : "~/MasterStudium/Masterarbeit/R Code/Kabel-Verbindung/Boxplot.R",
+    "project_path" : "Boxplot.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "daten <- read.csv(\"daten_all.csv\")\n\ninstall.packages(\"ggplot2\")\nlibrary(ggplot2)\nggplot(daten, aes(x=Reihe, y=Werte, fill=Reihe)) +\n   geom_boxplot(width=0.6) +\n   stat_summary(geom=\"text\", fun.y=quantile,\n                aes(label=sprintf(\"%1.1f\", ..y..), color=Reihe),\n                position = position_nudge(x=0.4),size=3.5, angle = 45) +\n   scale_fill_manual(\n      values = c(\n         \"SP_CSS DATEN\" = \"#b00b1e\",\n         \"SP_CSS_SP_BILDER DATEN\" = \"#040661\"\n      )\n   ) +\n   scale_color_manual(\n      values = c(\n         \"SP_CSS DATEN\" = \"#b00b1e\",\n         \"SP_CSS_SP_BILDER DATEN\" = \"#040661\"\n      )\n   ) +\n   theme(\n      axis.title = element_blank()\n   ) +\n   coord_flip()\n   \n",
+    "created" : 1467195619735.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1657702131",
+    "id" : "5A3ED1A",
+    "lastKnownWriteTime" : 1467196027,
+    "last_content_update" : 1467196027941,
+    "path" : "~/JuDa_Seafile/JuDa/Ju/Boxplot.R",
+    "project_path" : "Boxplot.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

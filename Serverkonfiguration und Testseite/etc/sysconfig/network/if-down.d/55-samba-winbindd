@@ -1,0 +1,77 @@
+#! /bin/bash
+#
+# This program is free software; you can redistribute it and/or modify it under
+# the terms of the GNU General Public License as published by the Free Software
+# Foundation; either version 2 of the License, or (at your option) any later
+# version.
+#
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more
+# details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program; if not, write to the Free Software Foundation, Inc., 59 Temple
+# Place, Suite 330, Boston, MA 02111-1307 USA
+#
+# Author: Lars Mueller <lars at samba dot org>
+
+# samba-winbindd
+#
+# Script to switch Samba's winbindd into online or offline mode
+
+unset ${!LC_*} LANGUAGE
+export LANG="POSIX"
+export PATH="/sbin:/usr/sbin:/bin/:/usr/bin"
+
+numArgs=$#
+configname="$1"
+shift
+interface="$1"
+if [ $interface = "lo" ]; then
+  exit 0
+fi
+shift
+# And shift away the '-o'.
+shift
+options="$@"
+
+# Log functions
+function log_dbg()
+{
+  	case "${options}" in
+		*debug*)
+			logger -t $0 -p daemon.debug "$1"
+			;;
+	esac
+}
+function log_err()
+{
+	logger -t $0 -p daemon.err "$1"
+	exit 1
+}
+
+# Check if offline logon is enabled; else do nothing.
+winbind_offline_logon=$( testparm -s --parameter-name "winbind offline logon" 2>/dev/null)
+test "${winbind_offline_logon}" = "Yes" || exit 0
+
+source /etc/rc.status
+
+# Main case switch
+case "$0" in
+	*if-up.d*)
+		if rc_active nmb; then
+			log_msg=$( rcnmb start 2>&1)
+			log_dbg "${log_msg}"
+		fi
+		log_msg=$( smbcontrol winbindd online 2>&1)
+		log_dbg "${log_msg}"
+		;;
+	*if-down.d*)
+		log_msg=$( smbcontrol winbindd offline 2>&1)
+		log_dbg "${log_msg}"
+		;;
+	*)
+		log_err "Don't know what to do.  This script used to be called from dir if-{up,down}.d/."
+		;;
+esac
